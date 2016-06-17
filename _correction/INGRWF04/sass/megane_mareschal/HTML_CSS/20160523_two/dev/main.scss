@@ -1,0 +1,50 @@
+$widthf:100%/4;
+
+body {
+	margin: 0 auto;
+	font-family: 'arial',sans-serif;
+	background: lightyellow;
+
+	/*.promo {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+
+		@media screen and (min-width:700px) {
+
+		}
+
+	}
+
+	.promo article {
+		width:100%;
+		padding: 10px;
+		@media screen and (min-width:700px) {
+			width: 20%;
+		}
+	}
+
+	.promo article:nth-of-type(2) {
+		width:50%;
+		background: lightblue;
+	}*/
+
+	.promo article {
+		float: left;
+		margin: 5px;
+		padding: 15px;
+		
+		background: lightgreen;
+
+		@media screen and (min-width: 800px) {
+			width: $widthf;
+		}
+	}
+
+	.group:after {
+		content: " ";
+		clear: both;
+		display: table;
+	} 
+}

@@ -1,0 +1,17 @@
+@mixin gradient($dir:to bottom,
+	$color1:#4c4c4c, $pos1:	$ps1,
+	$color2:#666666, $pos2: $ps2,
+	$color3:#2c2c2c, $pos3: $ps3,
+	$color4:#000000, $pos4: $ps4,
+	$color5:#2b2b2b, $pos5: $ps5,
+	$color6:#131313, $pos6: $ps6
+	){
+	background: linear-gradient($dir,
+		$color1 $pos1,
+		$color2 $pos2,
+		$color3 $pos3,
+		$color4 $pos4,
+		$color5 $pos5,
+		$color6 $pos6);
+}
+

@@ -1,0 +1,44 @@
+
+
+body {
+  background: tan;
+  font-family: 1em/1.5 $txtTitle;
+  margin: 30px;
+}
+
+.promo {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+	}
+	@media screen and (min-width: 750px) {
+ 	display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    margin-bottom: 10px
+ 
+}
+
+article {
+  border: 1px solid #000;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  opacity: 0.8;
+  width: 250px;
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "rippleregular";
+
+}

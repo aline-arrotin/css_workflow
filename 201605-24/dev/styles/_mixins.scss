@@ -1,0 +1,21 @@
+@mixin flexcolumn($disflex:flex, $dir:column, $flwrap:nowrap, $just:center) {
+	display: $disflex;
+	flex-direction: $dir;
+	flex-wrap: $flwrap;
+	justify-content: $just;
+};
+
+@mixin btn($wdth: 100%, $pdg: 15px, $bg-c: #999, $f-famly: sans-serif, $f-size: 1em, $clr: #000, $bdr: none, $bdr-r: 4px) {
+	width: $wdth;
+	padding: $pdg;
+	background: $bg-c;
+	font-family: $f-famly;
+	font-size: $f-size;
+	color: $clr;
+	border: $bdr;
+	border-radius: $bdr-r;
+};
+
+@mixin bgcolor($dir, $color1, $pos1, $color2, $pos2, $color3, $pos3){
+	background: linear-gradient(to $dir, $color1 $pos1, $color2 $pos2, $color3 $pos3);
+};

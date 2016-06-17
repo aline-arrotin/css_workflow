@@ -1,0 +1,186 @@
+body {
+	margin: 0 auto;
+} //body
+
+		.container {
+			height: 120px;
+
+			@include gradient(to bottom, red, 10%, yellow, $ps4) 
+
+
+
+			//$pos1, $color2, $pos2, yellow, $pos3, $color4, $pos4, $color5, $pos5, $color6, $pos6);
+
+			.identity {
+				padding: 10px 15px;
+				margin: 0;
+			}
+
+			img {
+				height:25px;
+			}
+
+			.navbar-nav {
+				ul {
+					display: flex;
+					justify-content: center;
+					
+					padding: 0 60px;
+
+					li {
+						list-style: none;
+						a {
+							color: white;
+							text-decoration: none;
+							padding: 10px;
+							text-transform: capitalize;
+
+							&:hover {
+								background: $redLink;
+							}
+						}
+					}
+				}
+			}//navbar-nav
+		}// container
+
+		main { 
+			margin: 0px 40px;
+
+		.blog-article {
+			margin-top: 40px;
+
+			h2 {
+				a {
+					text-decoration: none;
+					color: $greyTitle;
+					font-family: $titleBold;
+					text-transform: uppercase;
+					letter-spacing: -1px;
+
+					&:hover {
+						text-decoration: underline;
+
+					}
+				}
+			}
+
+			section {
+				font-size: $sizeText;
+
+				a {
+					color: $redLink;
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+			img {
+				margin-top: 15px;
+				margin-bottom: 15px;
+				width: 100%;
+			}
+			hr {
+				opacity: .2;
+			}
+		}//blog-article
+	}//main
+
+	.post {
+		margin: 40px 40px;
+	}//aside post
+		
+	.subscribe {
+		text-align: center;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 30px;
+		background: $lightGreySub;
+
+		h3 {
+			font-size: $sizeText;
+			font-family: $txtRegular;
+			margin: 0;
+		}
+
+		p {
+			font-family: $txtRegular;
+			font-size: $sizeText;
+		}
+
+		form {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+
+			input {
+				margin-bottom: 20px;
+				width: 100%;
+				padding: 20px;
+
+				font-size: $sizeText;
+				font-family: $txtRegular;
+				text-align: center;
+			}
+
+			input[type="text"] {
+				color: lightgrey;
+				border: 0px solid white;
+			}
+
+			input[type="button"] {
+				color: white;
+				background: $redLink;
+				border: 0px solid $redLink;
+			}
+			}//form
+		}// subscribe
+
+
+
+	.post > ul{
+			display: flex;//flexbox
+			padding: 0;
+			li {
+				color: $redLink;
+				list-style: none;
+				a {
+					margin: 0 5px;
+					font-family: $txtRegular;
+					font-size: $sizeText;
+					color: $redLink;
+					text-decoration: none;
+
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}//a
+			}//li
+		}//postul
+
+		.recent {
+			h3 {
+				font-family: $txtRegular;
+				text-transform: uppercase;
+			}
+
+			a {
+				@extend .txtRegularUpper;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+
+

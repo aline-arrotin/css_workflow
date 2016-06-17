@@ -1,0 +1,24 @@
+$titleBold:'montserratbold';
+$txtRegular:'montserratregular';
+
+$sizeText: .8em;
+
+$greyTitle: #282c2d;
+$redLink: #f32028;
+$lightGreySub: #ebebeb;
+
+
+
+$ps1:0%;
+$ps2:25%;
+$ps3:50%;
+$ps4:51%;
+$ps5:76%;
+$ps6:100%;
+
+
+.txtRegularUpper {
+	font-family: $txtRegular;
+	font-size: $sizeText;
+	color: $redLink;
+}

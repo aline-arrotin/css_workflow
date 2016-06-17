@@ -1,0 +1,21 @@
+@import "normalize";
+@import "fonts";
+@import "vars";
+@import "default";
+@import "styles";
+@import "carousel";
+@import "formulaires";
+//Eliminer les feuilles inutiles...
+
+$color:hsla(100%,50%,10%,.5);
+$color-light:lighten($color, 10%);
+$width: 100%;
+$width-cols: $width/3;
+
+body {
+	background: $color-light;
+}
+
+.promo {
+	//display: flex;
+}

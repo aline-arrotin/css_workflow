@@ -1,0 +1,88 @@
+.forms-inscription{
+	display: block;
+	margin: 0 auto;
+	padding: 35px;
+	width: 400px;
+	@include bgcolor(bottom, #f6f6f6, 0%, #f1f1f1, 51%, #ddd, 100%);
+
+	.form-inscr{
+	margin: 0 40px;
+	padding-top: 10px;
+	}
+}
+
+div{
+	position: relative;
+	@include flexcolumn (flex, column, nowrap, center);
+
+	input{
+		font-family: $regular;
+		padding: 5px 0;
+		margin-bottom: 45px;
+		border: none;
+		background: transparent;
+		border-bottom: 1px solid gainsboro;
+		&::placeholder{
+			color: transparent;
+		}
+		&:focus::placeholder{
+			color: #555;
+		}
+	}
+
+
+	input:focus{
+		outline: none;
+		opacity: 1;
+		transition: all 1s;
+	}
+
+	input:focus + span+ label{
+		opacity: 0;
+		filter: blur(5px);
+		transition: filter 1s, opacity 2s, color 1s;
+
+	}
+
+	label{
+		position: absolute;
+		top: -30px;
+		width: 100%;
+		font-family: $italic;
+		font-size: 1.5em;
+		color: #555;
+		opacity: 1;
+		transition: filter 1s, opacity 1s, color 3s;
+
+	}
+
+	span:before{
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0;
+		font-family:'icomoon';
+		content: "\e6005";
+		@extend .icon-confuzed;
+	}
+
+	input:focus + span:before{
+		opacity: 1;
+	}
+
+}
+
+
+		button{
+			margin-top: 10px;
+		}
+
+		button[type="submit"]{
+			@include btn(80%, 15px, #999, $regular, 1.2em, #000, none, 4px);//Possibilté d'enlever le nom de la variable en face.
+			//Ne pas laisser une variable par défault, sans la définir. Si elle a été définie dans _vars au préalable, elle peut se retrouver mais fait office de valeur. 
+		
+		}
+
+		button.connect{
+			@include btn(80%, $pdg: 10px, $bg-c: #FF7700, $f-famly: $regular, $f-size: 1em, $clr: #fff, $bdr: none, $bdr-r: 60px);
+		}	

@@ -1,0 +1,43 @@
+body {
+  background: pink;
+}
+
+/*.promo {
+	display: flex;
+	justify-content: space-around;
+
+	@media screen and (mind-width: 500px){
+		flex-direction: row;
+	}
+	flex-wrap: wrap;
+}
+
+.promo article {
+
+	width: 100%;
+
+	@media screen and (min-width: 500px){
+		width: $width/4;
+	}
+	
+}*/
+.promo article {
+  background: green;
+}
+
+@media screen and (min-width: 500px) {
+  .promo article {
+    float: left;
+    margin: 5px 10px;
+    padding: 0 15px;
+    width: 25%;
+  }
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*# sourceMappingURL=main.min.css.map */

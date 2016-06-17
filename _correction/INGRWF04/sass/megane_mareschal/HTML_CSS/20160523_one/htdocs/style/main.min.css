@@ -1,0 +1,24 @@
+body {
+  font-family: 'arial', sans-serif;
+  background: rgba(255, 255, 204, 0.5); }
+  body .promo {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  body .promo section {
+    width: 100%; }
+    @media screen and (min-width: 600px) {
+      body .promo section {
+        width: 20%; } }
+  body .promo section:nth-of-type(2) {
+    background: lightblue;
+    width: 50%;
+    padding: 30px; }
+
+/*# sourceMappingURL=main.min.css.map */

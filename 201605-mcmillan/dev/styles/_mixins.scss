@@ -1,0 +1,10 @@
+@mixin bgcolor($dir, $color1, $pos1, $color2, $pos2){
+	background: linear-gradient(to $dir, $color1 $pos1, $color2 $pos2);
+}
+
+
+
+@mixin headline(){
+	font-family:;
+	font-size:;
+};
